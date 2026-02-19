@@ -2,12 +2,19 @@
 
 [English](./README.md)
 
-このリポジトリには [prologue](https://www.korg.com/jp/products/synthesizers/prologue/), [minilogue xd](https://www.korg.com/jp/products/synthesizers/minilogue_xd/), [Nu:Tekt NTS-1 digital kit](https://www.korg.com/jp/products/dj/nts_1/) , [Nu:Tekt NTS-1 digital kit mkII](https://www.korg.com/jp/products/synthesizers/nts_1_mk2) synthesizers　, the [Nu:Tekt NTS-3 kaoss pad kit](https://www.korg.com/jp/products/dj/nts_3) , and [drumlogue](https://www.korg.com/jp/products/drums/drumlogue/) の6製品で使用できる自作オシレーターやエフェクトのビルドに必要なファイルが全て揃っています.
+このリポジトリには [prologue](https://www.korg.com/jp/products/synthesizers/prologue/), [minilogue xd](https://www.korg.com/jp/products/synthesizers/minilogue_xd/), [Nu:Tekt NTS-1 digital kit](https://www.korg.com/jp/products/dj/nts_1/), [Nu:Tekt NTS-1 digital kit mkII](https://www.korg.com/jp/products/synthesizers/nts_1_mk2), [microKORG2](https://www.korg.com/products/synthesizers/microkorg2) synthesizers, the [Nu:Tekt NTS-3 kaoss pad kit](https://www.korg.com/jp/products/dj/nts_3), and [drumlogue](https://www.korg.com/jp/products/drums/drumlogue/) の6製品で使用できる自作オシレーターやエフェクトのビルドに必要なファイルが全て揃っています.
+
+## ニュース
+
+[websim](websim/) に、NTS-1 mkii と NTS-3 向けの新しいWebベースのシミュレーターが追加されました. 
+Webブラウザ内でDSPコードの開発、テスト、デバッグができ、開発サイクルを大幅に高速化できます.
+使い方は [websim/README.md](websim/README.md) を参照してください.
 
 ## まずは使ってみよう
 
 既に公開されているオシレーターやエフェクトの情報は [Unit Index](https://korginc.github.io/logue-sdk/ja/unit-index/) にあります.
 具体的な入手方法については各デベロッパーのウェブサイトにてご確認下さい.
+[logue-SDK-filter](https://logue-sdk.vercel.app/) という、より検索しやすいユニットインデックスページもあります.
 
 ## プラットフォームと互換性に関して
 
@@ -19,6 +26,7 @@
 | drumlogue                      | v2.0.0 | >= v1.0.0      | ARM Cortex-A7 | ELF 32-bit LSB shared object, ARM, EABI5 v1 (SYSV), dynamic |
 | Nu:Tekt NTS-1 digital kit mkII | v2.0.0 | >= v1.0.0      | ARM Cortex-M7 | ELF 32-bit LSB shared object, ARM, EABI5 v1 (SYSV), dynamic |
 | Nu:Tekt NTS-3 kaoss pad kit    | v2.0.0 | >= v1.0.0      | ARM Cortex-M7 | ELF 32-bit LSB shared object, ARM, EABI5 v1 (SYSV), dynamic |
+| microKORG2                     | v2.1.0 | >= v2.0.0      | ARM Cortex-A7 | ELF 32-bit LSB shared object, ARM, EABI5 v1 (SYSV), dynamic |
 
 #### バイナリ互換性について
 
@@ -30,7 +38,8 @@ prologue, minilogue xd, Nu:Tekt NTS-1 dgital kitの3製品のために作成さ�
 * [platform/nutekt-digital/](platform/nutekt-digital/) : *Nu:Tekt NTS-1 digital kit*専用のファイル, テンプレートとデモプロジェクト
 * [platform/drumlogue/](platform/drumlogue/) : *drumlogue*専用のファイルとテンプレート
 * [platform/nts-1_mkii/](platform/nts-1_mkii/) : *Nu:Tekt NTS-1 digital kit mkII*専用のファイル, テンプレートとデモプロジェクト
-* [platform/nts-3_kaoss/](platform/nts-3_kaoss/) : *Nu:Tekt NTS-3 kaoss pad kit専用のファイル, テンプレートとデモプロジェクト
+* [platform/nts-3_kaoss/](platform/nts-3_kaoss/) : *Nu:Tekt NTS-3 kaoss pad kit*専用のファイル, テンプレートとデモプロジェクト
+* [platform/microkorg2/](platform/microkorg2/) : *microKORG2*専用のファイル, テンプレートとデモプロジェクト
 * [platform/ext/](platform/ext/) : 外部依存ファイルとサブモジュール
 * [docker/](docker/) : ホストOSに依存せずあらゆるプラットフォーム向けのプロジェクトを構築するためのdocker containerのソース
 * [tools/](tools/) : プロジェクトのビルド、またはビルド成果物の操作に必要なツールとドキュメント. dockerを使用する場合は必要ありません
@@ -44,5 +53,6 @@ prologue, minilogue xd, Nu:Tekt NTS-1 dgital kitの3製品のために作成さ�
 ## サポート
 
 KORGはlogue-sdkに関しての技術的なサポートを提供しません.
+
 
 
