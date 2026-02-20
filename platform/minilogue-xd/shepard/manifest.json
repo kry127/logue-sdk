@@ -1,0 +1,21 @@
+{
+    "header" : 
+    {
+        "platform" : "minilogue-xd",
+        "module" : "osc",
+        "api" : "1.1-0",
+        "dev_id" : 0,
+        "prg_id" : 0,
+        "version" : "1.0-0",
+        "name" : "Shepard",
+        "num_param" : 6,
+        "params" : [
+            ["Motion",    -100, 100, "%"],
+            ["Width",        0, 100, "%"],
+            ["Octaves",      0,   7, ""],
+            ["Detune",       0, 100, "%"],
+            ["Gain",         0, 100, "%"],
+            ["Waveform",     0, 100, "%"]
+          ]
+    }
+}
